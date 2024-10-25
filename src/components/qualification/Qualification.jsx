@@ -18,7 +18,7 @@ const Qualification = () => {
                         ? "qualification__button qualification__active button--flex" :
                         "qualification__button button--flex"
                     }
-                    onClick={()=> toggleTab(1)}>
+                        onClick={() => toggleTab(1)}>
                         <i className="uil uil-graduation-cap qualification__icon">
 
                         </i> Education
@@ -27,7 +27,7 @@ const Qualification = () => {
                         ? "qualification__button qualification__active button--flex" :
                         "qualification__button button--flex"
                     }
-                    onClick={()=> toggleTab(2)}>
+                        onClick={() => toggleTab(2)}>
                         <i className="uil uil-briefcase-alt qualification__icon">
 
                         </i> Experience
@@ -40,11 +40,11 @@ const Qualification = () => {
                     }>
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">role</h3>
-                                <span className="qualification__subtitle">India - institute</span>
+                                <h3 className="qualification__title">Mathematics and Statistics</h3>
+                                <span className="qualification__subtitle">IIT Kanpur - Dual degree</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
+                                    </i> 2007-2012
                                 </div>
                             </div>
                             <div>
@@ -60,55 +60,26 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">role2</h3>
-                                <span className="qualification__subtitle">India - institute</span>
+                                <h3 className="qualification__title">Artificial Intelligence</h3>
+                                <span className="qualification__subtitle">Stanford University - Graduate certificate</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
+                                    </i> 2017-2021
                                 </div>
                             </div>
                         </div>
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">role</h3>
-                                <span className="qualification__subtitle">India - institute</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
-                                </div>
-                            </div>
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                        </div>
-                        <div className="qualification__data">
-                            <div></div>
 
-                            <div>
-                                <span className="qualification__rounder"></span>
-                                <span className="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 className="qualification__title">role2</h3>
-                                <span className="qualification__subtitle">India - institute</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div className={toggleState === 2 ? "qualification__content qualification__content-active"
                         : "qualification__content"
                     }>
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">role</h3>
-                                <span className="qualification__subtitle">adobe - institute</span>
+                                <h3 className="qualification__title">Summer research fellowship</h3>
+                                <span className="qualification__subtitle">IISc - Bangalore</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
+                                    </i> 2010
                                 </div>
                             </div>
                             <div>
@@ -124,21 +95,51 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
                             <div>
-                                <h3 className="qualification__title">role2</h3>
-                                <span className="qualification__subtitle">India - institute</span>
+                                <h3 className="qualification__title">Software Engineer</h3>
+                                <span className="qualification__subtitle">Paypal - India</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
+                                    </i> 2012-2013
                                 </div>
                             </div>
                         </div>
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title">role</h3>
-                                <span className="qualification__subtitle">India - institute</span>
+                                <h3 className="qualification__title">Advisor</h3>
+                                <span className="qualification__subtitle">Scalend - Bangalore</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt">
-                                    </i> 2021-present
+                                    </i> 2014-2019
+                                </div>
+                            </div>
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 className="qualification__title">Mentor</h3>
+                                <span className="qualification__subtitle">Springboard - Part time</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt">
+                                    </i> 2019-2021
+                                </div>
+                            </div>
+                        </div>
+                        <div className="qualification__data">
+                            <div>
+                                <h3 className="qualification__title">ML manager</h3>
+                                <span className="qualification__subtitle">Adobe</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt">
+                                    </i> 2013-current
                                 </div>
                             </div>
                             <div>
