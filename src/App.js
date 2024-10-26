@@ -1,30 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Services from './components/services/Services';
-import Qualification from './components/qualification/Qualification';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
-import ScrollUp from './components/scrollup/ScrollUp';
+import React from 'react';
+import Main from './pages/Main.js';
+import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom';
+import PublicS from './pages/PublicS.js';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <main className='main'>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Services/>
-      <Qualification/>
-      <Contact/>
-    </main>
-    <Footer/>
-    <ScrollUp/>
-    </>
+    <Router>
+      <Switch>
+        <Route path='/portfolio' element={<Main/>}/>
+        <Route path='/publicspeakings' element={<PublicS/>}/>
+      </Switch>
+    </Router>
+
   );
 }
 
