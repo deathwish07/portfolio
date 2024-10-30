@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./header.css";
-import { Link } from 'react-router-dom';
 
 const Header = () => {
   const[Toggle, showMenu] = useState(false);
@@ -48,7 +47,7 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="/portfolio#blog" className="nav__link">
+              <a href="/blog" className="nav__link">
                 <i className="uil uil-document-layout-left nav__icon"></i>Blog
               </a>
             </li>
