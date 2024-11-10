@@ -66,6 +66,10 @@
     -webkit-box-orient: vertical;
 }
 
+.link {
+    color: var(--title-color);
+}
+
 @media screen and (max-width:992px) {
     .post__containers {
         grid-template-columns: 1fr;
