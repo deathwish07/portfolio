@@ -15,29 +15,28 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-edit services__icon"></i>
-                    <h3 className="services__title">Researcher</h3>
+                    <h3 className="services__title">Research</h3>
                 </div>
 
                 <span className="services__button" onClick={()=>toggleTab(1)}>View More<i className="uil uil-arrow-right services__button-icon"></i></span>
                 <div className={toggleState ===1 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
-                        <h3 className="services__modal-title">Researcher</h3>
-                        <p className="services__modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur, ullam exercitationem porro tenetur tempore non placeat.</p>
+                        <h3 className="services__modal-title">AI/ML Research</h3>
+                        <p className="services__modal-description">Excited to collaborate on AI/ML research opportunities or hackathons with active researchers and practitioners</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope ml models</p>
+                                <p className="services__modal-info">I do research on new ideas</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I do Web developement</p>
+                                <p className="services__modal-info">I do AI/ML consulting</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope user interface</p>
+                                <p className="services__modal-info">I build prototypes to test out ideas</p>
                             </li>
                         </ul>
                     </div>
@@ -46,29 +45,28 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-web-grid services__icon"></i>
-                    <h3 className="services__title">Data <br/>Scientist</h3>
+                    <h3 className="services__title">Speaking and Publishing</h3>
                 </div>
 
                 <span className="services__button" onClick={()=>toggleTab(2)}>View More<i className="uil uil-arrow-right services__button-icon"></i></span>
                 <div className={toggleState ===2 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
-                        <h3 className="services__modal-title">Data Scientist</h3>
-                        <p className="services__modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur, ullam exercitationem porro tenetur tempore non placeat.</p>
+                        <h3 className="services__modal-title">Speaking</h3>
+                        <p className="services__modal-description">Excited to talk about latest AI developments</p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope ml models</p>
+                                <p className="services__modal-info">I talk about latest Generative AI advancements</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I do Web developement</p>
+                                <p className="services__modal-info">I collab on articles or panel discussions</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope user interface</p>
+                                <p className="services__modal-info">I provide my expert insights based on industry trends</p>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +75,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-arrow services__icon"></i>
-                    <h3 className="services__title">Software <br/>Developer</h3>
+                    <h3 className="services__title">Advice on interviews, finance and immigration</h3>
                 </div>
 
                 <span className="services__button" onClick={()=>toggleTab(3)}>View More<i className="uil uil-arrow-right services__button-icon"></i></span>
@@ -85,21 +83,20 @@ const Services = () => {
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close" onClick={()=>toggleTab(0)}></i>
                         <h3 className="services__modal-title">Software Developer</h3>
-                        <p className="services__modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Consequatur, ullam exercitationem porro tenetur tempore non placeat.</p>
+                        <p className="services__modal-description">Advice on various topics ranging from AI/ML interview preparation, Startups, Immigration visas, Investing, Speaking and Publishing </p>
 
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope ml models</p>
+                                <p className="services__modal-info"> Happy to help with pointers on AI/ML interview preparation</p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I do Web developement</p>
+                                <p className="services__modal-info"> Help with building profile for skilled immigration visas  </p>
                             </li>
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"></i>
-                                <p className="services__modal-info">I develope user interface</p>
+                                <p className="services__modal-info"> Help with financial investing </p>
                             </li>
                         </ul>
                     </div>

@@ -54,8 +54,8 @@ const Data = () => {
                   ></path>
                 </svg>
         </h1>
-        <h3 className="home__subtitle">Title</h3>
-        <p className="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate deserunt distinctio enim consequatur tempore sint nisi.</p>
+        <h3 className="home__subtitle">Hello!</h3>
+        <p className="home__description">I'm Sai Arava working on ML at Adobe, interested in AGI, Investing, Immigration, Startups  </p>
         <a href="#contact" className="button button--flex">Say Hi!
         <svg
                   class="button__icon"
