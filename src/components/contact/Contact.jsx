@@ -19,31 +19,10 @@ const Contact = () => {
             <h2 className="section__title">Get in touch</h2>
             <span className="section__subtitle">Contact me</span>
             <div className="contact__container container grid">
-                <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
-                    <div className="contact__info">
-                        <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
-                            <h3 className="contact__card-title">Email</h3>
-                            <span className="contact__card-data">aravasai@gmail.com</span>
-                            <a href="mailto:aravasai@gmail.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-                        </div>
-                        <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
-                            <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">+1 (669) 264-0380</span>
-                            <a href="https://wa.me/+1 (669) 264-0380" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
-                        </div>
-                        <div className="contact__card">
-                            <i className="bx bx-phone-call contact__card-icon"></i>
-                            <h3 className="contact__card-title">Call</h3>
-                            <span className="contact__card-data">'number for calling'</span>
 
-                        </div>
-                    </div>
-                </div>
+               
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me a your project</h3>
+                    <h3 className="contact__title">Tell me your project</h3>
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
                             <label className="contact__form-tag">Name</label>

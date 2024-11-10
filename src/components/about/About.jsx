@@ -14,10 +14,16 @@ const About = () => {
                 <div className="about__data">
                     <Info/>
 
-                    <p className="about__description">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Quia voluptates magnam et temporibus aliquam
-                        reprehenderit iste fugit corporis impedit dolorem deserunt aperiam
-                        tenetur tempora quidem, labore natus architecto, cupiditate ducimus illum? Dolor?
+                    <p className="about__description">
+                    I’m Sai Kumar Arava, a technologist, software architect, and machine learning manager with over a decade of experience in creating transformative AI/ML solutions that drive real value for businesses and their customers. Currently, I lead a talented team of ML scientists, software engineers, and data engineers at Adobe Systems, where we build and deploy AI services like Customer AI and Attribution AI, supporting hundreds of enterprise clients. Our work has empowered brands like Nvidia, Disney, and Home Depot to make data-driven decisions, generating billions of insights and substantial revenue impact.
+
+In my role at Adobe, I focus on developing generative AI models that improve workflows through reinforcement learning and deploying retrieval-augmented generation (RAG) applications to enable AI-first user experiences. I work across teams to ensure that our products meet enterprise needs and drive measurable business results, from concept to execution.
+
+Previously at PayPal, I specialized in advanced NLP techniques, where I applied sentiment analysis and text classification to enhance customer engagement. My journey in AI also includes co-founding Scalend.com, where I led a team of data scientists delivering NLP-driven solutions to clients like Bosch and Reliance, integrating our technology with platforms like Magento and Shopify to enhance e-commerce experiences.
+
+I hold a Graduate Certificate in Artificial Intelligence from Stanford University and a Master’s in Mathematics and Scientific Computing from IIT Kanpur. As an active speaker and participant in AI workshops, I’m dedicated to sharing knowledge and driving innovation, which has also led me to win multiple Generative AI hackathons. My approach is hands-on and action-oriented, ensuring that each innovation isn’t just conceptual but effectively implemented.
+
+Specialties: Machine Learning, MLOps, Generative AI, NLP, Big Data, Distributed Computing, Product Development, Customer Engagement
                     </p>
                     <a download="" href="" className="button button--flex">Download CV
                         <svg
