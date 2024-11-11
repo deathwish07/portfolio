@@ -3,11 +3,11 @@ import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import Write from './write/Write'
 
-const Blogs = () => {
+const Blogs = ({setIsAuth}) => {
   return (
     <>
     <Header/>
-    <Write/>
+    <Write setIsAuth={setIsAuth}/>
     <Footer/>
     </>
   )

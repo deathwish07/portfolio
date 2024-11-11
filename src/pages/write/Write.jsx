@@ -4,6 +4,7 @@ import toast from 'react-hot-toast';
 import { storage, db } from '../../firebase-config';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { collection, addDoc } from "firebase/firestore";
+
 // import { setIsAuth } from '../../App';
 
 
@@ -11,7 +12,6 @@ const Write = ({ setIsAuth }) => {
 
     const [title, setTitle] = useState("");
     const [text, setText] = useState("");
-    console.log(setIsAuth)
     // const [image, setImage] = useState(null);
 
     // const handleImageChange = (e) => {

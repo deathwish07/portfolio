@@ -1,16 +1,42 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./blog.css";
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../firebase-config';
+import AboutImg from "../../assets/about.jpg"
 
-import Posts from '../posts/Posts';
 
 const Blog = () => {
+    const [postLists, setPostList] = useState([]);
+    const postCollectionRef = collection(db, 'blogs');
+    useEffect(() => {
+        const getPosts = async () => {
+            const data = await getDocs(postCollectionRef);
+            setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+        };
+        getPosts()
+    })
     return (
         <div className='home'>
+            <img src={AboutImg}/>
             <div className="post__container grid">
-                <Posts img="https://images.pexels.com/photos/6758029/pexels-photo-6758029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
-                <Posts img="https://images.pexels.com/photos/6711867/pexels-photo-6711867.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                <Posts img="https://images.pexels.com/photos/5490778/pexels-photo-5490778.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
-                <Posts img="https://images.pexels.com/photos/4916559/pexels-photo-4916559.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                {postLists.map((post) => {
+                    return (
+                        <div>
+                            <div className='postInfo'>
+                                <span className="postTitle">
+                                    <div className="post__title">
+                                        {post.title}
+                                    </div>
+                                </span>
+                                <hr />
+                                {/* <span className="postDate">{post.createdAt}</span> */}
+                            </div>
+                            <p className="postDesc">
+                                {post.text}
+                            </p>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

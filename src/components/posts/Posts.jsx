@@ -5,17 +5,12 @@ import './posts.css';
 const Posts = ({img}) => {
     return (
         <div className="post post__containers">
-            <img
-                className="postImg"
-                src={img}
-                alt=""
-            />
             <div className="postInfo">
                 
                 <span className="postTitle">
-                    <Link to="/postabc" className="link">
+                    <div to="/postabc" className="post__title">
                         Lorem ipsum dolor sit amet
-                    </Link>
+                    </div>
                 </span>
                 <hr />
                 <span className="postDate">1 hour ago</span>
