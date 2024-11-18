@@ -9,10 +9,18 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('YOUR_SERVICE_ID', 'template_ieg1qwf', form.current, {
+            .sendForm('service_bdgrrrm', 'template_ieg1qwf', form.current, {
                 publicKey: 'qrPqiwkEUtPcwHPXK',
             })
-            e.target.reset()
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text)
+                }
+            )
+        e.target.reset()
     }
     return (
         <section className="contact section" id="contact">

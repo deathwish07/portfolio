@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./about.css";
 import AboutImg from "../../assets/about.jpg"
 //import CV from "";
 import Info from './Info';
 
 const About = () => {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleReadMore = () => {
+        setIsExpanded(!isExpanded);
+    };
     return (
         <section className="about section" id="about">
             <h2 className="section__title">About me</h2>
@@ -12,19 +17,48 @@ const About = () => {
             <div className="about__container container grid">
                 <img src={AboutImg} alt="" className="about__img" />
                 <div className="about__data">
-                    <Info/>
+                    <Info />
 
-                    <p className="about__description">
-                    I’m Sai Kumar Arava, a technologist, software architect, and machine learning manager with over a decade of experience in creating transformative AI/ML solutions that drive real value for businesses and their customers. Currently, I lead a talented team of ML scientists, software engineers, and data engineers at Adobe Systems, where we build and deploy AI services like Customer AI and Attribution AI, supporting hundreds of enterprise clients. Our work has empowered brands like Nvidia, Disney, and Home Depot to make data-driven decisions, generating billions of insights and substantial revenue impact.
+                    <p className="about__description">{isExpanded ? `I’m Sai Kumar Arava, a technologist, software architect, and machine 
+                    learning manager with over a decade of experience in creating transformative AI/ML solutions that drive real value for 
+                    businesses and their customers. Currently, I lead a talented team of ML scientists, software engineers, and data engineers 
+                    at Adobe Systems, where we build and deploy AI services like Customer AI and Attribution AI, supporting hundreds of 
+                    enterprise clients. Our work has empowered brands like Nvidia, Disney, and Home Depot to make data-driven decisions, 
+                    generating billions of insights and substantial revenue impact. 
+                    In my role at Adobe, I focus on developing generative AI models that improve workflows through reinforcement learning 
+                    and deploying retrieval-augmented generation (RAG) applications to enable AI-first user experiences. I work across teams
+                     to ensure that our products meet enterprise needs and drive measurable business results, from concept to execution.
+                    Previously at PayPal, I specialized in advanced NLP techniques, where I applied sentiment analysis and text classification 
+                    to enhance customer engagement. My journey in AI also includes co-founding Scalend.com, where I led a team of data scientists 
+                    delivering NLP-driven solutions to clients like Bosch and Reliance, integrating our technology with platforms like Magento and 
+                    Shopify to enhance e-commerce experiences.
+                    I hold a Graduate Certificate in Artificial Intelligence from Stanford University and a Master’s in Mathematics and Scientific 
+                    Computing from IIT Kanpur. As an active speaker and participant in AI workshops, I’m dedicated to sharing knowledge and driving 
+                    innovation, which has also led me to win multiple Generative AI hackathons. My approach is hands-on and action-oriented, ensuring 
+                    that each innovation isn’t just conceptual but effectively implemented.
 
-In my role at Adobe, I focus on developing generative AI models that improve workflows through reinforcement learning and deploying retrieval-augmented generation (RAG) applications to enable AI-first user experiences. I work across teams to ensure that our products meet enterprise needs and drive measurable business results, from concept to execution.
-
-Previously at PayPal, I specialized in advanced NLP techniques, where I applied sentiment analysis and text classification to enhance customer engagement. My journey in AI also includes co-founding Scalend.com, where I led a team of data scientists delivering NLP-driven solutions to clients like Bosch and Reliance, integrating our technology with platforms like Magento and Shopify to enhance e-commerce experiences.
-
-I hold a Graduate Certificate in Artificial Intelligence from Stanford University and a Master’s in Mathematics and Scientific Computing from IIT Kanpur. As an active speaker and participant in AI workshops, I’m dedicated to sharing knowledge and driving innovation, which has also led me to win multiple Generative AI hackathons. My approach is hands-on and action-oriented, ensuring that each innovation isn’t just conceptual but effectively implemented.
-
-Specialties: Machine Learning, MLOps, Generative AI, NLP, Big Data, Distributed Computing, Product Development, Customer Engagement
+                    Specialties: Machine Learning, MLOps, Generative AI, NLP, Big Data, Distributed Computing, Product Development, Customer Engagement` : `I’m Sai Kumar Arava, a technologist, software architect, and machine learning manager with over a decade of experience in creating transformative AI/ML solutions that drive real value for businesses and their customers. Currently, I lead a talented team of ML scientists, software engineers, and data engineers at Adobe Systems, where we build and deploy AI services like Customer AI and Attribution AI, supporting hundreds of enterprise clients. Our work has empowered brands like Nvidia, Disney, and Home Depot to make data-driven decisions, generating billions of insights and substantial revenue impact....`}
+                    <button
+                        onClick={toggleReadMore}
+                        style={{
+                            marginTop: "10px",
+                            padding: "10px 20px",
+                            background: "#fff", // Matches the yellow-gold accents from your theme
+                            color: "#000", // Contrasts well for readability
+                            border: "none",
+                            borderRadius: "20px",
+                            fontSize: "0.9rem",
+                            fontWeight: "600",
+                            cursor: "pointer",
+                            transition: "background-color 0.3s ease",
+                        }}
+                        onMouseOver={(e) => (e.target.style.backgroundColor = "var(--tite-color)")}
+                        onMouseOut={(e) => (e.target.style.backgroundColor = "var(--tite-color)")}
+                    >
+                        {isExpanded ? "Read Less<<" : "Read More>>"}
+                    </button>
                     </p>
+                    
                     <a download="" href="" className="button button--flex">Download CV
                         <svg
                             className="button__icon"

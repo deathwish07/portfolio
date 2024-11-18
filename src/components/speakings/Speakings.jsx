@@ -11,22 +11,21 @@ const Speakings = () => {
         <div className='speaking'>
         <section className="about section" id="speakings">
             <h2 className="section__title">Public Speakings</h2>
-            <span className="section__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            <span className="section__subtitle"></span>
             <div className="about__container container grid">
                 <img src= {Work1} alt="" className="about__img" />
                 <div className="about__data">
                     <h2>Aiify</h2>
                     <p className="about__description">Aiify agentic AI summit with fellow prominent speakers
                     </p>
-                    <a download="" href="https://aiify.io/events/agentic-summit/livestream-2024-09-23_24/" className="button button--flex">RSVP
-                    </a>
+                    <a download="" href="https://aiify.io/events/agentic-summit/livestream-2024-09-23_24/" className="button button--flex">See Highlights!</a>
                 </div>
                 <div className="about__data">
                     <h2>Encord</h2>
                     <p className="about__description">
                         A session on Ai afterhours with encord
                     </p>
-                    <a download="" href="https://www.youtube.com/watch?v=TgyxeVuHjG0" className="button button--flex">RSVP
+                    <a download="" href="https://www.youtube.com/watch?v=TgyxeVuHjG0" className="button button--flex">See Highlights!
                     </a>
                 </div>
                 <img src= {Work2} alt="" className="about__img" />
@@ -36,7 +35,7 @@ const Speakings = () => {
                     <p className="about__description">A session on Analytics vidhya about improving LLM-based marketing
                         analytics copilots with semantic search and fine tuning. 
                     </p>
-                    <a download="" href="https://www.analyticsvidhya.com/events/datahour/improving-llm-based-marketing-analytics-copilots-with-semantic-search-and-fine-tuning/" className="button button--flex">RSVP
+                    <a download="" href="https://www.analyticsvidhya.com/events/datahour/improving-llm-based-marketing-analytics-copilots-with-semantic-search-and-fine-tuning/" className="button button--flex">See Highlights!
                     </a>
                 </div>
                 <div className="about__data">
@@ -44,7 +43,7 @@ const Speakings = () => {
                     <p className="about__description">A session on oreilly about GenAI superstream: developing
                         innovative apps with generative AI
                     </p>
-                    <a download="" href="https://www.oreilly.com/live-events/genai-superstream-developing-innovative-apps-with-generative-ai/0642572100011/0642572100010/" className="button button--flex">RSVP
+                    <a download="" href="https://www.oreilly.com/live-events/genai-superstream-developing-innovative-apps-with-generative-ai/0642572100011/0642572100010/" className="button button--flex">See Highlights!
                     </a>
                 </div>
                 <img src= {Work4} alt="" className="about__img" />
@@ -53,7 +52,7 @@ const Speakings = () => {
                     <h2>Cloudxlab</h2>
                     <p className="about__description">Featured in cloudxlabs mega event Tech week 2024
                     </p>
-                    <a download="" href="https://cloudxlab.com/tech-week?utm_source=Linkedin&utm_medium=event&utm_campaign=techweek2024" className="button button--flex">RSVP
+                    <a download="" href="https://cloudxlab.com/tech-week?utm_source=Linkedin&utm_medium=event&utm_campaign=techweek2024" className="button button--flex">See Highlights!
                     </a>
                 </div>
             </div>
