@@ -89,15 +89,19 @@
     }
 
     .about__box {
-        padding: 0.75rem 0.rem;
+        padding: 0.75rem 0rem;
     }
 
     .about__data {
         text-align: center;
+        display: block;
+        margin: auto;
     }
 
     .about__info {
         justify-content: center;
+        display: block;
+        margin: auto;
     }
 
     .about__description {
@@ -118,6 +122,7 @@
         justify-content: center;
         display: block;
         padding: 0;
+        
     }
 
 }

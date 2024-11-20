@@ -17,7 +17,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route path='/portfolio' element={<Main />} />
+          <Route path='/' element={<Main />} />
           <Route path='/publicspeakings' element={<PublicS />} />
           <Route path='/blog' element={<Blogs />} />
           <Route path='/postabc' element={<Post />} />

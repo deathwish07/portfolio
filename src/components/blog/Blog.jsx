@@ -6,20 +6,27 @@ import AboutImg from "../../assets/about.jpg"
 
 
 const Blog = () => {
-    const [postLists, setPostList] = useState([]);
-    const postCollectionRef = collection(db, 'blogs');
+    const [postList, setPostList] = useState([]); // State to hold fetched posts
+    const [showFullContent, setShowFullContent] = useState({}); // To toggle full content for each post
+
+    const postCollectionRef = collection(db, "blogs");
+
     useEffect(() => {
         const getPosts = async () => {
             const data = await getDocs(postCollectionRef);
-            setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+            setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
         };
-        getPosts()
-    })
+        getPosts();
+    }, []);
     return (
         <div className='home'>
-            <img src={AboutImg}/>
+            <img src={AboutImg} />
             <div className="post__container grid">
-                {postLists.map((post) => {
+                {postList.map((post) => {
+                    const wordLimit = 30; // Adjust this as needed
+                    const previewContent = post.text
+                        ? post.text.split(" ").slice(0, wordLimit).join(" ")
+                        : "No content available.";
                     return (
                         <div>
                             <div className='postInfo'>
@@ -32,8 +39,28 @@ const Blog = () => {
                                 {/* <span className="postDate">{post.createdAt}</span> */}
                             </div>
                             <p className="postDesc">
-                                {post.text}
+                                {showFullContent[post.id] ? post.text : `${previewContent}...`}
                             </p>
+                            <button
+                                onClick={() => setShowFullContent((prev) => ({
+                                    ...prev,
+                                    [post.id]: !prev[post.id], // Toggle content only for this post
+                                }))}
+                                style={{
+                                    marginTop: "10px",
+                                    padding: "10px 20px",
+                                    background: "#fff", // Matches the yellow-gold accents from your theme
+                                    color: "#000", // Contrasts well for readability
+                                    border: "none",
+                                    borderRadius: "20px",
+                                    fontSize: "0.9rem",
+                                    fontWeight: "600",
+                                    cursor: "pointer",
+                                    transition: "background-color 0.3s ease",
+                                }}
+                            >
+                                {showFullContent[post.id] ? "Show Less" : "Read More"}
+                            </button>
                         </div>
                     )
                 })}

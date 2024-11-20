@@ -17,7 +17,7 @@ const About = () => {
             <div className="about__container container grid">
                 <img src={AboutImg} alt="" className="about__img" />
                 <div className="about__data">
-                    <Info />
+                    {/* <Info /> */}
 
                     <p className="about__description">{isExpanded ? `I’m Sai Kumar Arava, a technologist, software architect, and machine 
                     learning manager with over a decade of experience in creating transformative AI/ML solutions that drive real value for 
@@ -59,7 +59,7 @@ const About = () => {
                     </button>
                     </p>
                     
-                    <a download="" href="" className="button button--flex">Download CV
+                    {/* <a download="" href="" className="button button--flex">Download CV
                         <svg
                             className="button__icon"
                             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const About = () => {
                                 fill="var(--container-color)"
                             ></path>
                         </svg>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </section>
